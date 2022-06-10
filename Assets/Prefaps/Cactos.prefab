@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2406869302378613629}
   - component: {fileID: 2406869302378613631}
   - component: {fileID: 2406869302378613624}
+  - component: {fileID: 4115652442897473842}
   m_Layer: 0
   m_Name: Cactos
   m_TagString: Untagged
@@ -78,6 +79,18 @@ CapsuleCollider:
   m_Height: 4.2947783
   m_Direction: 1
   m_Center: {x: 0.068811655, y: 1.9330361, z: -4.223153}
+--- !u!114 &4115652442897473842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2406869302378613628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc900cbdaf52c2145ae4c66f4a7e8668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2406869301786084249
 PrefabInstance:
   m_ObjectHideFlags: 0
