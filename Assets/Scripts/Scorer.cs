@@ -7,11 +7,20 @@ public class Scorer : MonoBehaviour
     //Creamos una variable de tipo int que almacenará el número de colisiones
     int hits = 0;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        hits++;
-        Debug.Log("You've bumped into a thing this many times: " + " " + hits);
-       
+        if(other.gameObject.tag != "Hit")
+        {
+            hits++;
+            Debug.Log("Has chocado: " + " " + hits + " " + "veces con esto");
+        }
+        else if(other.gameObject.tag == "Hit")
+        {
+            Debug.Log("Ya chocaste con esto");
+
+        }
+        
+      
     }
 
 

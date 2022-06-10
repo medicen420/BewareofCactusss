@@ -1297,6 +1297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactos
       objectReference: {fileID: 0}
+    - target: {fileID: 2406869302378613628, guid: 55a2d6de83e7af74d97bcec3ba787ca2, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2406869302378613630, guid: 55a2d6de83e7af74d97bcec3ba787ca2, type: 3}
       propertyPath: m_RootOrder
       value: 2
