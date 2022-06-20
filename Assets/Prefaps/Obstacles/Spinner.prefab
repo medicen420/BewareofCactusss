@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 5601056267251155643}
   - component: {fileID: 5601056267251155640}
   - component: {fileID: 5601056267251155644}
-  - component: {fileID: 5601056267251155646}
+  - component: {fileID: 8330871307142698136}
   m_Layer: 0
   m_Name: Spinner
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   Xvalue: 0
   Yvalue: 1
   Zvalue: 0
---- !u!114 &5601056267251155646
+--- !u!114 &8330871307142698136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

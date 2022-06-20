@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
+    public Life lifes;
     
     //En el momento en que entra en la colisión ejecuta el siguiente código
       private void OnCollisionEnter(Collision other)
@@ -12,18 +13,13 @@ public class ObjectHit : MonoBehaviour
         //ejecuta el bloque de código
         if(other.gameObject.tag == "Player")
         {
-            //Dentro de el Componente MeshRenderer
-            GetComponent<MeshRenderer>().material.color = Color.red;
-            gameObject.tag = "Hit";
 
-           
+            print("<color=magenta> ¡Te has golpeado! </color>");
+            lifes.DownLife();
+            
+
         }
        
-
-        
-
       }
-
-    
 
 }

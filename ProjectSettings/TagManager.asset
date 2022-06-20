@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hit
+  - Bridge
+  - Obstacle
+  - Water
+  - OntheWater
+  - Detect_dropper
+  - Balloon
   layers:
   - Default
   - TransparentFX

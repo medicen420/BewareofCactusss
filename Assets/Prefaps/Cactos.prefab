@@ -10,12 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2406869302378613630}
   - component: {fileID: 7537434397357378506}
+  - component: {fileID: 8648068862016206127}
   - component: {fileID: 2180325275450759184}
   - component: {fileID: 7110428105673493215}
-  - component: {fileID: 8648068862016206127}
+  - component: {fileID: 3584263446308171835}
   m_Layer: 0
   m_Name: Cactos
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,14 +45,28 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2406869302378613628}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!136 &8648068862016206127
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2406869302378613628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.6651621
+  m_Height: 4.582868
+  m_Direction: 1
+  m_Center: {x: 0.16020966, y: 1.791434, z: -4.237178}
 --- !u!114 &2180325275450759184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,20 +92,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc900cbdaf52c2145ae4c66f4a7e8668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &8648068862016206127
-CapsuleCollider:
+  points: 0
+--- !u!114 &3584263446308171835
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2406869302378613628}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.6651621
-  m_Height: 4.582868
-  m_Direction: 1
-  m_Center: {x: 0.16020966, y: 1.791434, z: -4.237178}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb668569588af44d927690ffd87b4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifepoints: 0
 --- !u!1001 &2406869301786084249
 PrefabInstance:
   m_ObjectHideFlags: 0

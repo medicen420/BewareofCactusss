@@ -7,12 +7,12 @@ public class Dropper : MonoBehaviour
     //Declaramos la siguiente variable de tipo MeshRenderer para 
     //alamacenar en caché los datos o información de el uso frecuente en la memoria
     //Una forma fácil de accder a ellos cuando sea necesario
-    MeshRenderer render;
+    [SerializeField] MeshRenderer render;
     //Declaramos de igual forma una variable de tipo Rigidbody
-    Rigidbody rigidBody;
-    [SerializeField] float timeToWait = 5f;
+    [SerializeField] Rigidbody rigidBody;
+    [SerializeField] GameObject detect_drop;
 
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -33,18 +33,22 @@ public class Dropper : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void downdropper()
     {
-        if(Time.time > timeToWait)
-        {
-            //enabled = habilitar
-            render.enabled = true;
-            rigidBody.useGravity = true;
-        }
-
-
+        print("<color=yellow> ¡Cuidado arriba! </color>");
+        //enabled = habilitar
+        render.enabled = true;
+        rigidBody.useGravity = true;
+        Destroy(detect_drop);
     }
 
     
+
+
+
+
+
+
+
 }
