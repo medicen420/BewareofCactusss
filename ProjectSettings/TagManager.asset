@@ -11,6 +11,8 @@ TagManager:
   - OntheWater
   - Detect_dropper
   - Balloon
+  - blue_balloon
+  - Flag
   layers:
   - Default
   - TransparentFX
