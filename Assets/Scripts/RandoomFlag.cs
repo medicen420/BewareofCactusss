@@ -128,6 +128,7 @@ public class RandoomFlag : MonoBehaviour
             Debug.Log("Ya pasaron 5 segundos en azul");
             Timewait = 5f;
             blue_flag.SetActive(false);
+
             InstantiateObject();
             
         }
