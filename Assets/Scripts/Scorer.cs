@@ -12,12 +12,16 @@ public class Scorer : MonoBehaviour
     //los puntos que se han ido acumulando
     [SerializeField] int points;
 
+    RandoomActivate randoom_act;
+    
+
 
     void Start()
     {
         //La variable pop al inicio del juego 
         //equivale a 0 ya que no hemos tronado ningun globo
         pop = 0;
+        
     }
 
     void Update()
@@ -29,18 +33,25 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        //Si chocaste con un objeto con el tag "obstacle"
-        //ejecuta el siguiente código
-        if (other.gameObject.tag == "Balloon")
+
+        if (other.gameObject.tag == "blue_balloon")
         {
             pop++;
-            print("<color=green>  Has tronado" + " " + pop + " " + "globos </color>");
-            if(pop == 3)
-            {
-                print("<color=cyan> ¡YOU WIN! </color>");
-            }
-            //Debug.Log("Has tronado: " + " " + pop + " " + "globos");
+            print("<color=cyan>  Has tronado" + " " + pop + " " + "globos de color azul </color>");
+
         }
+        //*************************************************************
+        if (other.gameObject.tag == "red_balloon")
+        {
+            Debug.Log("Este color no idiota");
+        }
+        //*************************************************************
+        if (other.gameObject.tag == "green_balloon")
+        {
+            Debug.Log("Este color no idiota");
+        }
+        //**************************************************************
+
         //Más si chocaste con un gameobject con el tag "hit"
         //ejecuta el siguiente código
 
@@ -55,4 +66,12 @@ public class Scorer : MonoBehaviour
 
     }
 
+ 
+   
+
+   
+
+
 }
+
+

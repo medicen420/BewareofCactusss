@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
-    public Life lifes;
+    Life lifes;
     
     //En el momento en que entra en la colisión ejecuta el siguiente código
       private void OnCollisionEnter(Collision other)

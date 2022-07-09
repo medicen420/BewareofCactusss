@@ -13,6 +13,9 @@ TagManager:
   - Balloon
   - blue_balloon
   - Flag
+  - Flag_blue
+  - red_balloon
+  - green_balloon
   layers:
   - Default
   - TransparentFX
